@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: connect-server
+  profiles:
+    active: dev

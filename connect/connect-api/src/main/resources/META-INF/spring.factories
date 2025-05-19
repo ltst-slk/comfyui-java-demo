@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.giggle.comfy.connect.api.fallback.TasksFallbackFeignClient

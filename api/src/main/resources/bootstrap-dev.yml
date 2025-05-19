@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    allow-circular-references: true
+  mvc:
+    path-match:
+      matching-strategy: ant_path_matcher
+  cloud:
+    nacos:
+      # 注册中心
+      discovery:
+        namespace: b2f05516-cb2b-4430-872f-0b23d4a9726c
+        group: comfyui
+        server-addr: http://192.168.1.17:8848
+      # 配置中心
+      config:
+        namespace: b2f05516-cb2b-4430-872f-0b23d4a9726c
+        group: comfyui
+        server-addr: http://192.168.1.17:8848
+        file-extension: yaml
+        shared-configs:
+          - data-id: comfyui-cloud-common.yaml
+
